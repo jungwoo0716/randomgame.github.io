@@ -1,0 +1,14 @@
+<h1> Congratulation</h1>
+
+<h2> 오늘 회식을 쏠 사람은 두두두두두둥</h2>
+
+<% @pick.each do |a| %>
+
+<p> 이름 : <%= a.one %></ps>
+<a href= "/update_view/<%= a.id%>">[수정]</a>
+<a href= "/destroy/<%= a.id%>">[삭제]</a>
+
+
+<% end %>
+
+<a href = "/index"> 돌아가기 </a>
